@@ -1,0 +1,11 @@
+Evaluation of  on prostate_chosen_dotplot_reads
+Total sequences: 101
+Within 1% tolerance: 33
+Within 2% tolerance: 62
+Within 2% tolerance: 84
+Within 4% tolerance: 94
+Within 5% tolerance: 98
+Within 20% tolerance: 100
+Within 50% tolerance: 100
+Within 80% tolerance: 101
+Number of norepeats: 0

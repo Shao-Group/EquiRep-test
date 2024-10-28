@@ -1,0 +1,260 @@
+Case 0:
+true:CCACT
+predicted:
+Edit:5
+
+Case 1:
+true:AGCCG
+predicted:
+Edit:5
+
+Case 2:
+true:ACGGA
+predicted:
+Edit:5
+
+Case 3:
+true:GTGGC
+predicted:
+Edit:5
+
+Case 4:
+true:TGGAT
+predicted:
+Edit:5
+
+Case 5:
+true:AGGTC
+predicted:
+Edit:5
+
+Case 6:
+true:GCGGC
+predicted:
+Edit:5
+
+Case 7:
+true:AAGTT
+predicted:
+Edit:5
+
+Case 8:
+true:CAGCA
+predicted:
+Edit:5
+
+Case 9:
+true:TAGAA
+predicted:
+Edit:5
+
+Case 10:
+true:GACTC
+predicted:
+Edit:5
+
+Case 11:
+true:TTTGC
+predicted:
+Edit:5
+
+Case 12:
+true:CTCAG
+predicted:
+Edit:5
+
+Case 13:
+true:CACTC
+predicted:
+Edit:5
+
+Case 14:
+true:TGTGC
+predicted:
+Edit:5
+
+Case 15:
+true:AACGG
+predicted:
+Edit:5
+
+Case 16:
+true:TTCTG
+predicted:
+Edit:5
+
+Case 17:
+true:AATCC
+predicted:
+Edit:5
+
+Case 18:
+true:TGCCA
+predicted:
+Edit:5
+
+Case 19:
+true:TAACT
+predicted:
+Edit:5
+
+Case 20:
+true:CTCCA
+predicted:
+Edit:5
+
+Case 21:
+true:CCAGC
+predicted:
+Edit:5
+
+Case 22:
+true:TCACA
+predicted:
+Edit:5
+
+Case 23:
+true:AGAGA
+predicted:
+Edit:5
+
+Case 24:
+true:ACGTC
+predicted:
+Edit:5
+
+Case 25:
+true:AATAT
+predicted:
+Edit:5
+
+Case 26:
+true:TCTAT
+predicted:
+Edit:5
+
+Case 27:
+true:TAATA
+predicted:
+Edit:5
+
+Case 28:
+true:GGACC
+predicted:
+Edit:5
+
+Case 29:
+true:CATTG
+predicted:
+Edit:5
+
+Case 30:
+true:TTAAT
+predicted:
+Edit:5
+
+Case 31:
+true:ACTAG
+predicted:
+Edit:5
+
+Case 32:
+true:TTCAT
+predicted:
+Edit:5
+
+Case 33:
+true:ATGCG
+predicted:
+Edit:5
+
+Case 34:
+true:AGGTT
+predicted:
+Edit:5
+
+Case 35:
+true:AAAGC
+predicted:
+Edit:5
+
+Case 36:
+true:GTTCA
+predicted:
+Edit:5
+
+Case 37:
+true:GGCCC
+predicted:
+Edit:5
+
+Case 38:
+true:GCTAC
+predicted:
+Edit:5
+
+Case 39:
+true:ATTAT
+predicted:
+Edit:5
+
+Case 40:
+true:TCGGA
+predicted:ATCGC
+Edit:1
+
+Case 41:
+true:ACTCC
+predicted:ACTCC
+Edit:0
+
+Case 42:
+true:TCCAG
+predicted:
+Edit:5
+
+Case 43:
+true:TAGCC
+predicted:
+Edit:5
+
+Case 44:
+true:TACTC
+predicted:
+Edit:5
+
+Case 45:
+true:CGTTG
+predicted:
+Edit:5
+
+Case 46:
+true:GAGTA
+predicted:
+Edit:5
+
+Case 47:
+true:GGCGG
+predicted:
+Edit:5
+
+Case 48:
+true:GATAA
+predicted:
+Edit:5
+
+Case 49:
+true:GGTAG
+predicted:
+Edit:5
+
+
+Total:50
+edit_0:1
+edit_1:1
+edit_2:0
+edit_3:0
+edit_4:0
+edit_g_4:48
+size of edits_list:50
+1,1,0,0,0,48 (1,2,4.82)

@@ -1,0 +1,2 @@
+13.04user 2.76system 0:15.81elapsed 99%CPU (0avgtext+0avgdata 1836936maxresident)k
+0inputs+8outputs (0major+916796minor)pagefaults 0swaps

@@ -1,0 +1,260 @@
+Case 0:
+true:TATCA
+predicted:
+Edit:5
+
+Case 1:
+true:CTTTA
+predicted:
+Edit:5
+
+Case 2:
+true:AAATT
+predicted:
+Edit:5
+
+Case 3:
+true:CCAAA
+predicted:
+Edit:5
+
+Case 4:
+true:CCTGA
+predicted:
+Edit:5
+
+Case 5:
+true:GCGCG
+predicted:
+Edit:5
+
+Case 6:
+true:TTCGA
+predicted:CGGATT
+Edit:1
+
+Case 7:
+true:CCGAT
+predicted:ATCCG
+Edit:0
+
+Case 8:
+true:ATAGT
+predicted:
+Edit:5
+
+Case 9:
+true:CTTGC
+predicted:
+Edit:5
+
+Case 10:
+true:GGTAT
+predicted:
+Edit:5
+
+Case 11:
+true:GCATG
+predicted:
+Edit:5
+
+Case 12:
+true:GACCA
+predicted:
+Edit:5
+
+Case 13:
+true:AACAT
+predicted:AACAT
+Edit:0
+
+Case 14:
+true:ATTCT
+predicted:
+Edit:5
+
+Case 15:
+true:CGAGC
+predicted:
+Edit:5
+
+Case 16:
+true:TTCCA
+predicted:
+Edit:5
+
+Case 17:
+true:GTTAG
+predicted:
+Edit:5
+
+Case 18:
+true:TTCAG
+predicted:
+Edit:5
+
+Case 19:
+true:TGTAG
+predicted:
+Edit:5
+
+Case 20:
+true:GCCTG
+predicted:
+Edit:5
+
+Case 21:
+true:GTGCG
+predicted:
+Edit:5
+
+Case 22:
+true:TGGCT
+predicted:
+Edit:5
+
+Case 23:
+true:ACGAC
+predicted:
+Edit:5
+
+Case 24:
+true:CGCAG
+predicted:
+Edit:5
+
+Case 25:
+true:CAAAC
+predicted:
+Edit:5
+
+Case 26:
+true:CACTA
+predicted:
+Edit:5
+
+Case 27:
+true:GATAA
+predicted:
+Edit:5
+
+Case 28:
+true:TCCAC
+predicted:
+Edit:5
+
+Case 29:
+true:AGCCT
+predicted:CCTAG
+Edit:0
+
+Case 30:
+true:GACGT
+predicted:
+Edit:5
+
+Case 31:
+true:AGTAC
+predicted:
+Edit:5
+
+Case 32:
+true:AGCAC
+predicted:
+Edit:5
+
+Case 33:
+true:TCGCA
+predicted:
+Edit:5
+
+Case 34:
+true:TAGTG
+predicted:GTGTA
+Edit:0
+
+Case 35:
+true:GCAGG
+predicted:
+Edit:5
+
+Case 36:
+true:TGCCC
+predicted:GCCCT
+Edit:0
+
+Case 37:
+true:TAGAA
+predicted:
+Edit:5
+
+Case 38:
+true:ATTAC
+predicted:
+Edit:5
+
+Case 39:
+true:ATCGT
+predicted:
+Edit:5
+
+Case 40:
+true:ATAGG
+predicted:
+Edit:5
+
+Case 41:
+true:CCTGA
+predicted:
+Edit:5
+
+Case 42:
+true:AGGAA
+predicted:
+Edit:5
+
+Case 43:
+true:TCACG
+predicted:
+Edit:5
+
+Case 44:
+true:TGCAG
+predicted:
+Edit:5
+
+Case 45:
+true:TCGCC
+predicted:
+Edit:5
+
+Case 46:
+true:TTTTC
+predicted:
+Edit:5
+
+Case 47:
+true:AAACT
+predicted:
+Edit:5
+
+Case 48:
+true:AAGGT
+predicted:
+Edit:5
+
+Case 49:
+true:CCTGC
+predicted:
+Edit:5
+
+
+Total:50
+edit_0:5
+edit_1:1
+edit_2:0
+edit_3:0
+edit_4:0
+edit_g_4:44
+size of edits_list:50
+5,1,0,0,0,44 (5,6,4.42)

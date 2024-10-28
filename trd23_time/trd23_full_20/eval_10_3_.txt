@@ -1,0 +1,260 @@
+Case 0:
+true:GTAATTTTTT
+predicted:TTTTTTGTAAA
+Edit:1
+
+Case 1:
+true:GCTGGGCTGT
+predicted:GGCTGTGCTG
+Edit:0
+
+Case 2:
+true:CCCATACGTG
+predicted:CCCATAGTTG
+Edit:2
+
+Case 3:
+true:ACTAAGCCTT
+predicted:CTAAGCCTTA
+Edit:0
+
+Case 4:
+true:ACGGTATACA
+predicted:ATACAACGT
+Edit:1
+
+Case 5:
+true:GCGAGTTCCT
+predicted:
+Edit:10
+
+Case 6:
+true:CGCTGGAGAA
+predicted:
+Edit:10
+
+Case 7:
+true:AGACACCACA
+predicted:ACCAAGAC
+Edit:2
+
+Case 8:
+true:GAATCCGTAC
+predicted:CGTACCAATC
+Edit:1
+
+Case 9:
+true:CAAAGAAAAC
+predicted:AAGAAAACCTC
+Edit:2
+
+Case 10:
+true:TCTGTCCTAT
+predicted:ACGTCCTAT
+Edit:2
+
+Case 11:
+true:TACGTCGCCC
+predicted:CGTCGCCCCA
+Edit:1
+
+Case 12:
+true:ACTCCGCCTC
+predicted:
+Edit:10
+
+Case 13:
+true:TGATGAAGAT
+predicted:GAGGAAGATT
+Edit:1
+
+Case 14:
+true:CTAAAAGAAT
+predicted:AAAAGAATC
+Edit:1
+
+Case 15:
+true:CTGGATGTTT
+predicted:GTTTCGGAT
+Edit:1
+
+Case 16:
+true:AGGTAATATC
+predicted:AGGTAATATCA
+Edit:1
+
+Case 17:
+true:CCCACGAAGG
+predicted:
+Edit:10
+
+Case 18:
+true:CGAAATATAT
+predicted:AT
+Edit:8
+
+Case 19:
+true:GCCGTTTGAG
+predicted:
+Edit:10
+
+Case 20:
+true:TGATTGTGGC
+predicted:
+Edit:10
+
+Case 21:
+true:TGAACCGGTC
+predicted:
+Edit:10
+
+Case 22:
+true:CACTAGTAAC
+predicted:
+Edit:10
+
+Case 23:
+true:CGGCTGTCCC
+predicted:CGCTGTCCC
+Edit:1
+
+Case 24:
+true:GGACGCCAGA
+predicted:
+Edit:10
+
+Case 25:
+true:CCGGACGCTG
+predicted:
+Edit:10
+
+Case 26:
+true:TCATCTTTAA
+predicted:TCTTATCATC
+Edit:2
+
+Case 27:
+true:CAGTGCGGCC
+predicted:GCCCAGTGCG
+Edit:0
+
+Case 28:
+true:AGAAGATAAT
+predicted:ATAGAAGATAA
+Edit:1
+
+Case 29:
+true:GCCCAGTCAT
+predicted:TTGCCCAGTC
+Edit:1
+
+Case 30:
+true:ATATGGGGGA
+predicted:TGGGGAATAG
+Edit:2
+
+Case 31:
+true:GGCGGACAAC
+predicted:GGAAAAGGCGGACAA
+Edit:6
+
+Case 32:
+true:CCCACTTATG
+predicted:
+Edit:10
+
+Case 33:
+true:GGAACTCTAT
+predicted:
+Edit:10
+
+Case 34:
+true:GCGTTACCTG
+predicted:TACCTGGCGT
+Edit:0
+
+Case 35:
+true:CCTATCCTCC
+predicted:
+Edit:10
+
+Case 36:
+true:CGAGTGAAAG
+predicted:
+Edit:10
+
+Case 37:
+true:CCCGTATATA
+predicted:TATATATCAC
+Edit:3
+
+Case 38:
+true:TTGACAACTA
+predicted:
+Edit:10
+
+Case 39:
+true:TAGGCATATC
+predicted:TCTAGGCAATA
+Edit:1
+
+Case 40:
+true:GCTACTGGTG
+predicted:
+Edit:10
+
+Case 41:
+true:CGGCCGAATA
+predicted:
+Edit:10
+
+Case 42:
+true:TGAGTGGCCC
+predicted:CTAGTGGCC
+Edit:1
+
+Case 43:
+true:ACCGTCCTAA
+predicted:CCGTCCTAA
+Edit:1
+
+Case 44:
+true:GAGAAGAATC
+predicted:GAACAATGCGA
+Edit:2
+
+Case 45:
+true:CTGGATGCCT
+predicted:CTGGAGCCT
+Edit:1
+
+Case 46:
+true:GCCGACCACA
+predicted:ACCG
+Edit:6
+
+Case 47:
+true:TGCTGAGACT
+predicted:CTGCTGAGA
+Edit:1
+
+Case 48:
+true:GATCTGCCTT
+predicted:CGCCTTGATCTGGCCTG
+Edit:7
+
+Case 49:
+true:GTTTAATCCA
+predicted:
+Edit:10
+
+
+Total:50
+edit_0:4
+edit_1:16
+edit_2:7
+edit_3:1
+edit_4:0
+edit_g_4:22
+size of edits_list:50
+4,16,7,1,0,22 (20,27,4.8)

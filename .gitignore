@@ -1,0 +1,5 @@
+.DS_Store
+*.exe
+*.out
+# /notes.md
+sftp-config.json
