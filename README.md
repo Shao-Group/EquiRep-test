@@ -1,6 +1,6 @@
 # Introduction
 
-This repo is for evaluating all tools and to reproduce results in the our paper.
+This repo is for evaluating all tools and to reproduce results in the EquiRep paper.
 
 # Data
 
