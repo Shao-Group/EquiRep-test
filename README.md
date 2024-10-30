@@ -55,3 +55,4 @@ input_dir=/data/tkz5115/repeat_project/data/dat3/$file
 output_dir=/data/tkz5115/repeat_project/data/dat3/$file/TH_results
 ```
 Then use `tidehunter_scripts/run_all.sh` to run MTR on all simulated data and get a evalution of the results.
+
