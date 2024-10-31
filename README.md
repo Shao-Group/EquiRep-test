@@ -3,6 +3,7 @@
 This repository provides a comprehensive evaluation of all tools and reproduces the results from the EquiRep paper. The official EquiRep repository can be found [here](https://github.com/Shao-Group/EquiRep).
 
 # Data
+<!-- Generation of data? -->
 
 All simulated and real data used in the experiments are available in the `data` directory.
 
@@ -19,21 +20,21 @@ No external installation is required. The source code for EquiRep is provided in
 
 ## Running experiments on simulated data
 1. Navigate to the EquiRep Testing Folder: 
-	```bash
+	```
 	cd EquiRep_test
 	```
-2. Open exec.sh to select the dataset you'd like to use (options are dat3, dat_aax2, or dat_aax3):
+2. Change `exec.sh` to select the dataset you'd like to use (options are dat3, dat_aax2, or dat_aax3):
 	```
 	input_dir_prefix=../data/simulated_data/dat3
 	# Replace dat3 with dat_aax2 or dat_aax3 for other simulated datasets
 	```
-3. Execute the following command to process all data files in the selected dataset:
-	```bash
+3. Run the following command to process all data files in the selected dataset. The results will be saved in the folders `EquiRep_test/EquiRep_error10` and `EquiRep_test/EquiRep_error20`.
+	```
    	./exec.sh
    	```
 ### Evalultion for simulated data results
 1. Navigate to the Evaluation Folder:
-	```bash
+	```
 	cd ../eval
 	```
 2. In `r_eval.sh`, specify the dataset to be evaluated:
@@ -42,11 +43,11 @@ No external installation is required. The source code for EquiRep is provided in
 	# Replace dat3 with dat_aax2 or dat_aax3 for other datasets
 	```
 3. Run the evaluation script:
-	```bash
+	```
    	./r_eval.sh
    	```
 4. Use the following command to compile all evaluation results into a summary sheet in the `EquiRep_test' folder:
-	```bash
+	```
 	python result_gather.py
 	```
 
@@ -57,57 +58,147 @@ No external installation is required. The source code for EquiRep is provided in
 # mTR
 
 ## Installation
-
-Use the mTR repo for installation https://github.com/morisUtokyo/mTR
+To install mTR, visit the [official mTR repository](https://github.com/morisUtokyo/mTR) on GitHub.
 
 ## Running experiments on simulated data
+1. Navigate to the mTR Testing Folder: 
+	```
+	cd mTR_test
+	```
+2. Change `run_mtr_simulated_data.sh` to set the location of mTR and select the dataset you'd like to use (options are dat3, dat_aax2, or dat_aax3):
+	```
+	dataset=dat3
+	# Replace dat3 with dat_aax2 or dat_aax3 to test on other simulated data
+	tool_dir=
+	# Put the location of your installed mTR here
+	```
+3. Change `run_evaluate_edit.sh` to select the dataset you'd like to use (options are dat3, dat_aax2, or dat_aax3):
+4. Run the following command to process all data files in the selected dataset. The evaluation will be run as well. The results will be saved in the folders `data/simulated_data/{dataset name}/error_10/MTR_results` and `data/simulated_data/{dataset name}/error_20/MTR_results`.:
+	```
+   	./run_all.sh
+   	```
+### Evalultion for simulated data results
+1. Change `result_gather_mTR.py` to set the dataset you used:
+	```
+	base_dir = "../data/simulated_data/dat3"
+	# Replace dat3 with dat_aax2 or dat_aax3 to test on other simulated data
+	```
+2. Use the following command to compile all evaluation results into a summary sheet in the `mTR_test' folder:
+	```
+	python result_gather_mTR.py
+	```
 
-To reproduce the MTR results in the paper. First install MTR. In the `MTR_scripts`, change the `run_mtr_simulated_data.sh`.
-```
-tool_dir=/data/tkz5115/repeat_project/tools/mTR
-input_dir=/data/tkz5115/repeat_project/data/dat3/$file
-output_dir=/data/tkz5115/repeat_project/data/dat3/$file/MTR_results
-```
-Then use `MTR_scripts/run_all.sh` to run MTR on all simulated data and get a evalution of the results.
 ## Running experiments on HOR data
 
 ## Running experiments on RCA data
 
 # TRF
+
+## Installation
+To install TRF, visit the [official TRF repository](https://github.com/Benson-Genomics-Lab/TRF) on GitHub.
+
 ## Running experiments on simulated data
-To reproduce the TRF results in the paper. First install TRF. In the `TRF_scripts`, change the `run_trf_simulated_data.sh`.
-```
-tool_dir=/data/tkz5115/repeat_project/tools/TRF
-input_dir=/data/tkz5115/repeat_project/data/dat3/$file
-output_dir=/data/tkz5115/repeat_project/data/dat3/$file/TRF_results
-```
-Then use `TRF_scripts/run_all.sh` to run MTR on all simulated data and get a evalution of the results.
+1. Navigate to the TRF Testing Folder: 
+	```
+	cd TRF_test
+	```
+2. Change `run_trf_simulated_data.sh` to set the location of TRF and select the dataset you'd like to use (options are dat3, dat_aax2, or dat_aax3):
+	```
+	dataset=dat3
+	# Replace dat3 with dat_aax2 or dat_aax3 to test on other simulated data
+	tool_dir=
+	# Put the location of your installed mTR here
+	```
+3. Change `run_evaluate_edit.sh` to select the dataset you'd like to use (options are dat3, dat_aax2, or dat_aax3):
+4. Execute the following command to process all data files in the selected dataset and run the evalution as well:
+	```
+   	./run_all.sh
+   	```
+### Evalultion for simulated data results
+1. Change `result_gather_TRF.py` to set the dataset you used:
+	```
+	base_dir = "../data/simulated_data/dat3"
+	# Replace dat3 with dat_aax2 or dat_aax3 to test on other simulated data
+	```
+2. Use the following command to compile all evaluation results into a summary sheet in the `TRF_test' folder:
+	```
+	python result_gather_TRF.py
+	```
+
 ## Running experiments on HOR data
 
 ## Running experiments on RCA data
 
 # mreps
+
+## Installation
+To install mreps, visit the [official mreps page](https://mreps.univ-mlv.fr/howto.html).
+
 ## Running experiments on simulated data
-To reproduce the mreps results in the paper. First install mreps. In the `mreps_scripts`, change the `run_mreps_simulated_data.sh`.
-```
-tool_dir=/data/tkz5115/repeat_project/tools/mreps
-input_dir=/data/tkz5115/repeat_project/data/dat3/$file
-output_dir=/data/tkz5115/repeat_project/data/dat3/$file/mreps_results
-```
-Then use `mreps_scripts/run_all.sh` to run mreps on all simulated data and get a evalution of the results.
+1. Navigate to the mreps Testing Folder: 
+	```
+	cd mreps_test
+	```
+2. Change `run_mreps_simulated_data.sh` to set the location of mreps and select the dataset you'd like to use (options are dat3, dat_aax2, or dat_aax3):
+	```
+	dataset=dat3
+	# Replace dat3 with dat_aax2 or dat_aax3 to test on other simulated data
+	tool_dir=
+	# Put the location of your installed mTR here
+	```
+3. Change `run_evaluate_edit.sh` to select the dataset you'd like to use (options are dat3, dat_aax2, or dat_aax3):
+4. Execute the following command to process all data files in the selected dataset and run the evalution as well:
+	```
+   	./run_all.sh
+   	```
+### Evalultion for simulated data results
+1. Change `result_gather_mreps.py` to set the dataset you used:
+	```
+	base_dir = "../data/simulated_data/dat3"
+	# Replace dat3 with dat_aax2 or dat_aax3 to test on other simulated data
+	```
+2. Use the following command to compile all evaluation results into a summary sheet in the `mTR_test' folder:
+	```
+	python result_gather_mreps.py
+	```
+
 ## Running experiments on HOR data
 
 ## Running experiments on RCA data
 
-# tideHunter
+# TideHunter
+
+## Installation
+To install TRF, visit the [official TRF repository](https://github.com/Xinglab/TideHunter) on GitHub.
+
 ## Running experiments on simulated data
-To reproduce the tideHunter results in the paper. First install tideHunter. In the `tidehunter_scripts`, change the `run_th_simulated_data.sh`.
-```
-tool_dir=/data/tkz5115/repeat_project/tools/TideHunter-v1.5.5/bin
-input_dir=/data/tkz5115/repeat_project/data/dat3/$file
-output_dir=/data/tkz5115/repeat_project/data/dat3/$file/TH_results
-```
-Then use `tidehunter_scripts/run_all.sh` to run MTR on all simulated data and get a evalution of the results.
+1. Navigate to the tidehunter Testing Folder: 
+	```
+	cd tidehunter_test
+	```
+2. Change `run_mtr_simulated_data.sh` to set the location of tidehunter and select the dataset you'd like to use (options are dat3, dat_aax2, or dat_aax3):
+	```
+	dataset=dat3
+	# Replace dat3 with dat_aax2 or dat_aax3 to test on other simulated data
+	tool_dir=
+	# Put the location of your installed mTR here
+	```
+3. Change `run_evaluate_edit.sh` to select the dataset you'd like to use (options are dat3, dat_aax2, or dat_aax3):
+4. Execute the following command to process all data files in the selected dataset and run the evalution as well:
+	```
+   	./run_all.sh
+   	```
+### Evalultion for simulated data results
+1. Change `result_gather_tidehunter.py` to set the dataset you used:
+	```
+	base_dir = "../data/simulated_data/dat3"
+	# Replace dat3 with dat_aax2 or dat_aax3 to test on other simulated data
+	```
+2. Use the following command to compile all evaluation results into a summary sheet in the `tidehunter_test' folder:
+	```
+	python result_gather_tidehunter.py
+	```
+
 ## Running experiments on HOR data
 
 ## Running experiments on RCA data
