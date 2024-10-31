@@ -1,6 +1,6 @@
 # Introduction
 
-This repo is for evaluating all tools and to reproduce the results in the EquiRep paper.
+This repository provides a comprehensive evaluation of all tools and reproduces the results from the EquiRep paper. The official EquiRep repository can be found [here](https://github.com/Shao-Group/EquiRep).
 
 # Data
 
@@ -14,10 +14,54 @@ All simulated and real data used in the experiments are available in the `data` 
 
 # EquiRep
 
-For our tool EquiRep, first install it according to https://github.com/Shao-Group/EquiRep.
-To reproduce our results on the simulated data, run the tool on the fasta files within `data/simulated_data`.
+## Installation
+No external installation is required. The source code for EquiRep is provided in this repository at `EquiRep_test/EquiRep.cpp`.
 
-# MTR
+## Running experiments on simulated data
+1. Navigate to the EquiRep Testing Folder: 
+	```bash
+	cd EquiRep_test
+	```
+2. Open exec.sh to select the dataset you'd like to use (options are dat3, dat_aax2, or dat_aax3):
+	```
+	input_dir_prefix=../data/simulated_data/dat3
+	# Replace dat3 with dat_aax2 or dat_aax3 for other simulated datasets
+	```
+3. Execute the following command to process all data files in the selected dataset:
+	```bash
+   	./exec.sh
+   	```
+### Evalultion for simulated data results
+1. Navigate to the Evaluation Folder:
+	```bash
+	cd ../eval
+	```
+2. In `r_eval.sh`, specify the dataset to be evaluated:
+	```
+	true_dir=../data/simulated_data/dat3/$data_index
+	# Replace dat3 with dat_aax2 or dat_aax3 for other datasets
+	```
+3. Run the evaluation script:
+	```bash
+   	./r_eval.sh
+   	```
+4. Use the following command to compile all evaluation results into a summary sheet in the `EquiRep_test' folder:
+	```bash
+	python result_gather.py
+	```
+
+## Running experiments on HOR data
+
+## Running experiments on RCA data
+
+# mTR
+
+## Installation
+
+Use the mTR repo for installation https://github.com/morisUtokyo/mTR
+
+## Running experiments on simulated data
+
 To reproduce the MTR results in the paper. First install MTR. In the `MTR_scripts`, change the `run_mtr_simulated_data.sh`.
 ```
 tool_dir=/data/tkz5115/repeat_project/tools/mTR
@@ -25,9 +69,12 @@ input_dir=/data/tkz5115/repeat_project/data/dat3/$file
 output_dir=/data/tkz5115/repeat_project/data/dat3/$file/MTR_results
 ```
 Then use `MTR_scripts/run_all.sh` to run MTR on all simulated data and get a evalution of the results.
+## Running experiments on HOR data
+
+## Running experiments on RCA data
 
 # TRF
-
+## Running experiments on simulated data
 To reproduce the TRF results in the paper. First install TRF. In the `TRF_scripts`, change the `run_trf_simulated_data.sh`.
 ```
 tool_dir=/data/tkz5115/repeat_project/tools/TRF
@@ -35,9 +82,12 @@ input_dir=/data/tkz5115/repeat_project/data/dat3/$file
 output_dir=/data/tkz5115/repeat_project/data/dat3/$file/TRF_results
 ```
 Then use `TRF_scripts/run_all.sh` to run MTR on all simulated data and get a evalution of the results.
+## Running experiments on HOR data
+
+## Running experiments on RCA data
 
 # mreps
-
+## Running experiments on simulated data
 To reproduce the mreps results in the paper. First install mreps. In the `mreps_scripts`, change the `run_mreps_simulated_data.sh`.
 ```
 tool_dir=/data/tkz5115/repeat_project/tools/mreps
@@ -45,9 +95,12 @@ input_dir=/data/tkz5115/repeat_project/data/dat3/$file
 output_dir=/data/tkz5115/repeat_project/data/dat3/$file/mreps_results
 ```
 Then use `mreps_scripts/run_all.sh` to run mreps on all simulated data and get a evalution of the results.
+## Running experiments on HOR data
+
+## Running experiments on RCA data
 
 # tideHunter
-
+## Running experiments on simulated data
 To reproduce the tideHunter results in the paper. First install tideHunter. In the `tidehunter_scripts`, change the `run_th_simulated_data.sh`.
 ```
 tool_dir=/data/tkz5115/repeat_project/tools/TideHunter-v1.5.5/bin
@@ -55,4 +108,7 @@ input_dir=/data/tkz5115/repeat_project/data/dat3/$file
 output_dir=/data/tkz5115/repeat_project/data/dat3/$file/TH_results
 ```
 Then use `tidehunter_scripts/run_all.sh` to run MTR on all simulated data and get a evalution of the results.
+## Running experiments on HOR data
+
+## Running experiments on RCA data
 

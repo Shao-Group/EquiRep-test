@@ -1,9 +1,10 @@
 #!/bin/bash
 
-code=trd23
-input_dir_prefix=../data/dat3
+code=EquiRep
+input_dir_prefix=../data/simulated_data/dat3
+# Replace dat3 with dat_aax2 or dat_aax3 to test on other simulated data
 
-data_dirs=(full_10 full_20)
+data_dirs=(error_10 error_20)
 
 MAX_JOBS=60
 

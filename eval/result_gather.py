@@ -2,14 +2,14 @@ import os
 import pandas as pd
 
 # Define the base directory and subfolders
-method = "trd23"  # to change
+method = "EquiRep"  # to change
 base_dir = f"../{method}_test"
-subfolders = [f"aax2_{method}_full_10", f"aax2_{method}_full_20"]
+subfolders = [f"{method}_error_10", f"{method}_error_20"]
 
 # List of (x, y) combinations to look for
 combinations = [
-    # (5, 3),   (5, 5),   (5, 10),   (5, 20),
-    # (10, 3),  (10, 5),  (10, 10),  (10, 20),
+    (5, 3),   (5, 5),   (5, 10),   (5, 20),
+    (10, 3),  (10, 5),  (10, 10),  (10, 20),
     (50, 3),  (50, 5),  (50, 10),  (50, 20),
     (200, 3), (200, 5), (200, 10), (200, 20),
     (500, 3), (500, 5), (500, 10), (500, 20)
