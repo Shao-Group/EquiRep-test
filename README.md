@@ -50,9 +50,9 @@ No external installation is required. The source code for EquiRep is provided in
 	python result_gather.py
 	```
 
-## Running experiments on HOR data
+<!-- ## Running experiments on HOR data
 
-## Running experiments on RCA data
+## Running experiments on RCA data -->
 
 # mTR
 
@@ -90,10 +90,10 @@ To install mTR, visit the [official mTR repository](https://github.com/morisUtok
 	```
 	python result_gather_mTR.py
 	```
-
+<!-- 
 ## Running experiments on HOR data
 
-## Running experiments on RCA data
+## Running experiments on RCA data -->
 
 # TRF
 
@@ -128,9 +128,9 @@ To install TRF, visit the [official TRF repository](https://github.com/Benson-Ge
 	python result_gather_TRF.py
 	```
 
-## Running experiments on HOR data
+<!-- ## Running experiments on HOR data
 
-## Running experiments on RCA data
+## Running experiments on RCA data -->
 
 # mreps
 
@@ -165,9 +165,9 @@ To install mreps, visit the [official mreps page](https://mreps.univ-mlv.fr/howt
 	python result_gather_mreps.py
 	```
 
-## Running experiments on HOR data
+<!-- ## Running experiments on HOR data
 
-## Running experiments on RCA data
+## Running experiments on RCA data -->
 
 # TideHunter
 
@@ -202,7 +202,7 @@ To install TideHunter, visit the [official TideHunter repository](https://github
 	python result_gather_tidehunter.py
 	```
 
-## Running experiments on HOR data
+<!-- ## Running experiments on HOR data
 
-## Running experiments on RCA data
+## Running experiments on RCA data -->
 
