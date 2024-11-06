@@ -3,7 +3,6 @@
 This repository provides a comprehensive evaluation of all tools and reproduces the results from the EquiRep paper. The official EquiRep repository can be found [here](https://github.com/Shao-Group/EquiRep).
 
 # Data
-<!-- Generation of data? -->
 
 All simulated and real data used in the experiments are available in the `data` directory.
 
@@ -42,11 +41,11 @@ No external installation is required. The source code for EquiRep is provided in
 	true_dir=../data/simulated_data/dat3/$data_index
 	# Replace dat3 with dat_aax2 or dat_aax3 for other datasets
 	```
-3. Run the evaluation script:
+3. Run the following command to evaluate all results. The evaluation outputs will be saved in the same folder as the results.
 	```
    	./r_eval.sh
    	```
-4. Use the following command to compile all evaluation results into a summary sheet in the `EquiRep_test' folder:
+4. Use the following command to compile all evaluation outputs into a summary sheet in the `EquiRep_test' folder:
 	```
 	python result_gather.py
 	```
@@ -72,8 +71,12 @@ To install mTR, visit the [official mTR repository](https://github.com/morisUtok
 	tool_dir=
 	# Put the location of your installed mTR here
 	```
-3. Change `run_evaluate_edit.sh` to select the dataset you'd like to use (options are dat3, dat_aax2, or dat_aax3):
-4. Run the following command to process all data files in the selected dataset. The evaluation will be run as well. The results will be saved in the folders `data/simulated_data/{dataset name}/error_10/MTR_results` and `data/simulated_data/{dataset name}/error_20/MTR_results`.:
+3. Change `run_evaluate_edit.sh` to select the dataset you chose in Step 2:
+	```
+	true_dir=../data/simulated_data/dat3/$file
+	# Replace dat3 with dat_aax2 or dat_aax3 to test on other simulated data
+	```
+4. Run the following command to process all data files in the selected dataset. The evaluation will be run as well. The results will be saved in the folders `data/simulated_data/{dataset name}/error_10/MTR_results` and `data/simulated_data/{dataset name}/error_20/MTR_results`.
 	```
    	./run_all.sh
    	```
@@ -169,7 +172,7 @@ To install mreps, visit the [official mreps page](https://mreps.univ-mlv.fr/howt
 # TideHunter
 
 ## Installation
-To install TRF, visit the [official TRF repository](https://github.com/Xinglab/TideHunter) on GitHub.
+To install TideHunter, visit the [official TideHunter repository](https://github.com/Xinglab/TideHunter) on GitHub.
 
 ## Running experiments on simulated data
 1. Navigate to the tidehunter Testing Folder: 
