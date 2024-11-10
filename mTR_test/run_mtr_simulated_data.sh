@@ -3,7 +3,7 @@
 file=$1 #simulation15
 dataset=dat3
 # Replace dat3 with dat_aax2 or dat_aax3 to test on other simulated data
-tool_dir=/data/tkz5115/repeat_project/tools/mTR
+tool_dir=
 # Put the location of your installed mTR here
 input_dir=../data/simulated_data/$dataset/$file
 output_dir=../data/simulated_data/$dataset/$file/MTR_results

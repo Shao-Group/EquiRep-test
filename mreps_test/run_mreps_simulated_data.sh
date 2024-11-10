@@ -1,71 +1,42 @@
 #!/bin/bash
 
 file=$1
-tool_dir=/data/tkz5115/repeat_project/tools/mreps
-input_dir=/data/tkz5115/repeat_project/data/dat3/$file
-output_dir=/data/tkz5115/repeat_project/data/dat3/$file/mreps_results
+dataset=dat3
+# Replace dat3 with dat_aax2 or dat_aax3 to test on other simulated data
+tool_dir=
+# Put the location of your installed mTR here
+input_dir=../data/simulated_data/$dataset/$file
+output_dir=../data/simulated_data/$dataset/$file/mreps_results
 
 mkdir -p $output_dir
 
 # Array of parameters for generating mreps output files
 params=(
-   "$input_dir/5_2_my.fasta"
     "$input_dir/5_3_my.fasta"
-    "$input_dir/5_4_my.fasta"
     "$input_dir/5_5_my.fasta"
     "$input_dir/5_10_my.fasta"
     "$input_dir/5_20_my.fasta"
-    "$input_dir/5_50_my.fasta"
-    "$input_dir/5_100_my.fasta"
-    "$input_dir/5_200_my.fasta"
+    # "$input_dir/5_50_my.fasta"
 
-    "$input_dir/10_2_my.fasta"
     "$input_dir/10_3_my.fasta"
-    "$input_dir/10_4_my.fasta"
     "$input_dir/10_5_my.fasta"
     "$input_dir/10_10_my.fasta"
     "$input_dir/10_20_my.fasta"
-    "$input_dir/10_50_my.fasta"
-    "$input_dir/10_100_my.fasta"
-    "$input_dir/10_200_my.fasta"
+    # "$input_dir/10_50_my.fasta"
 
-    "$input_dir/20_2_my.fasta"
-    "$input_dir/20_3_my.fasta"
-    "$input_dir/20_4_my.fasta"
-    "$input_dir/20_5_my.fasta"
-    "$input_dir/20_10_my.fasta"
-    "$input_dir/20_20_my.fasta"
-    "$input_dir/20_50_my.fasta"
-    "$input_dir/20_100_my.fasta"
-
-    "$input_dir/50_2_my.fasta"
     "$input_dir/50_3_my.fasta"
-    "$input_dir/50_4_my.fasta"
     "$input_dir/50_5_my.fasta"
     "$input_dir/50_10_my.fasta"
     "$input_dir/50_20_my.fasta"
-    "$input_dir/50_50_my.fasta"
-    "$input_dir/50_100_my.fasta"
+    # "$input_dir/50_50_my.fasta"
 
-    "$input_dir/100_2_my.fasta"
-    "$input_dir/100_3_my.fasta"
-    "$input_dir/100_4_my.fasta"
-    "$input_dir/100_5_my.fasta"
-    "$input_dir/100_10_my.fasta"
-    "$input_dir/100_20_my.fasta"
-    "$input_dir/100_30_my.fasta"
-
-    "$input_dir/200_2_my.fasta"
     "$input_dir/200_3_my.fasta"
-    "$input_dir/200_4_my.fasta"
     "$input_dir/200_5_my.fasta"
     "$input_dir/200_10_my.fasta"
     "$input_dir/200_20_my.fasta"
-    "$input_dir/200_50_my.fasta"
+    # "$input_dir/200_50_my.fasta"
 
-    "$input_dir/500_2_my.fasta"
     "$input_dir/500_3_my.fasta"
-    "$input_dir/500_4_my.fasta"
     "$input_dir/500_5_my.fasta"
     "$input_dir/500_10_my.fasta"
     "$input_dir/500_20_my.fasta"
@@ -126,63 +97,31 @@ if [ $? -eq 0 ]; then
 
     # Array of parameters for generating fasta files with mreps sequence (highest exp) from mreps output
     params=(
-        "$output_dir/mreps_5_2_my.out"
         "$output_dir/mreps_5_3_my.out"
-        "$output_dir/mreps_5_4_my.out"
         "$output_dir/mreps_5_5_my.out"
         "$output_dir/mreps_5_10_my.out"
         "$output_dir/mreps_5_20_my.out"
-        "$output_dir/mreps_5_50_my.out"
-        "$output_dir/mreps_5_100_my.out"
-        "$output_dir/mreps_5_200_my.out"
+        # "$output_dir/mreps_5_50_my.out"
 
-        "$output_dir/mreps_10_2_my.out"
         "$output_dir/mreps_10_3_my.out"
-        "$output_dir/mreps_10_4_my.out"
         "$output_dir/mreps_10_5_my.out"
         "$output_dir/mreps_10_10_my.out"
         "$output_dir/mreps_10_20_my.out"
-        "$output_dir/mreps_10_50_my.out"
-        "$output_dir/mreps_10_100_my.out"
-        "$output_dir/mreps_10_200_my.out"
+        # "$output_dir/mreps_10_50_my.out"
 
-        "$output_dir/mreps_20_2_my.out"
-        "$output_dir/mreps_20_3_my.out"
-        "$output_dir/mreps_20_4_my.out"
-        "$output_dir/mreps_20_5_my.out"
-        "$output_dir/mreps_20_10_my.out"
-        "$output_dir/mreps_20_20_my.out"
-        "$output_dir/mreps_20_50_my.out"
-        "$output_dir/mreps_20_100_my.out"
-
-        "$output_dir/mreps_50_2_my.out"
         "$output_dir/mreps_50_3_my.out"
-        "$output_dir/mreps_50_4_my.out"
         "$output_dir/mreps_50_5_my.out"
         "$output_dir/mreps_50_10_my.out"
         "$output_dir/mreps_50_20_my.out"
-        "$output_dir/mreps_50_50_my.out"
-        "$output_dir/mreps_50_100_my.out"
+        # "$output_dir/mreps_50_50_my.out"
 
-        "$output_dir/mreps_100_2_my.out"
-        "$output_dir/mreps_100_3_my.out"
-        "$output_dir/mreps_100_4_my.out"
-        "$output_dir/mreps_100_5_my.out"
-        "$output_dir/mreps_100_10_my.out"
-        "$output_dir/mreps_100_20_my.out"
-        "$output_dir/mreps_100_30_my.out"
-
-        "$output_dir/mreps_200_2_my.out"
         "$output_dir/mreps_200_3_my.out"
-        "$output_dir/mreps_200_4_my.out"
         "$output_dir/mreps_200_5_my.out"
         "$output_dir/mreps_200_10_my.out"
         "$output_dir/mreps_200_20_my.out"
-        "$output_dir/mreps_200_50_my.out"
+        # "$output_dir/mreps_200_50_my.out"
 
-        "$output_dir/mreps_500_2_my.out"
         "$output_dir/mreps_500_3_my.out"
-        "$output_dir/mreps_500_4_my.out"
         "$output_dir/mreps_500_5_my.out"
         "$output_dir/mreps_500_10_my.out"
         "$output_dir/mreps_500_20_my.out"

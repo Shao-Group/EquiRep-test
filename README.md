@@ -113,7 +113,7 @@ To install TRF, visit the [official TRF repository](https://github.com/Benson-Ge
 	# Put the location of your installed mTR here
 	```
 3. Change `run_evaluate_edit.sh` to select the dataset you'd like to use (options are dat3, dat_aax2, or dat_aax3):
-4. Execute the following command to process all data files in the selected dataset and run the evalution as well:
+4. Run the following command to process all data files in the selected dataset. The evaluation will be run as well. The results will be saved in the folders `data/simulated_data/{dataset name}/error_10/TRF_results` and `data/simulated_data/{dataset name}/error_20/TRF_results`.
 	```
    	./run_all.sh
    	```
@@ -150,7 +150,7 @@ To install mreps, visit the [official mreps page](https://mreps.univ-mlv.fr/howt
 	# Put the location of your installed mTR here
 	```
 3. Change `run_evaluate_edit.sh` to select the dataset you'd like to use (options are dat3, dat_aax2, or dat_aax3):
-4. Execute the following command to process all data files in the selected dataset and run the evalution as well:
+4. Run the following command to process all data files in the selected dataset. The evaluation will be run as well. The results will be saved in the folders `data/simulated_data/{dataset name}/error_10/mreps_results` and `data/simulated_data/{dataset name}/error_20/mreps_results`.
 	```
    	./run_all.sh
    	```
@@ -187,7 +187,7 @@ To install TideHunter, visit the [official TideHunter repository](https://github
 	# Put the location of your installed mTR here
 	```
 3. Change `run_evaluate_edit.sh` to select the dataset you'd like to use (options are dat3, dat_aax2, or dat_aax3):
-4. Execute the following command to process all data files in the selected dataset and run the evalution as well:
+4. Run the following command to process all data files in the selected dataset. The evaluation will be run as well. The results will be saved in the folders `data/simulated_data/{dataset name}/error_10/TH_results` and `data/simulated_data/{dataset name}/error_20/TH_results`.
 	```
    	./run_all.sh
    	```
