@@ -110,7 +110,7 @@ To install TRF, visit the [official TRF repository](https://github.com/Benson-Ge
 	dataset=dat3
 	# Replace dat3 with dat_aax2 or dat_aax3 to test on other simulated data
 	tool_dir=
-	# Put the location of your installed mTR here
+	# Put the location of your installed TRF here
 	```
 3. Change `run_evaluate_edit.sh` to select the dataset you'd like to use (options are dat3, dat_aax2, or dat_aax3):
 4. Run the following command to process all data files in the selected dataset. The evaluation will be run as well. The results will be saved in the folders `data/simulated_data/{dataset name}/error_10/TRF_results` and `data/simulated_data/{dataset name}/error_20/TRF_results`.
@@ -147,7 +147,7 @@ To install mreps, visit the [official mreps page](https://mreps.univ-mlv.fr/howt
 	dataset=dat3
 	# Replace dat3 with dat_aax2 or dat_aax3 to test on other simulated data
 	tool_dir=
-	# Put the location of your installed mTR here
+	# Put the location of your installed mreps here
 	```
 3. Change `run_evaluate_edit.sh` to select the dataset you'd like to use (options are dat3, dat_aax2, or dat_aax3):
 4. Run the following command to process all data files in the selected dataset. The evaluation will be run as well. The results will be saved in the folders `data/simulated_data/{dataset name}/error_10/mreps_results` and `data/simulated_data/{dataset name}/error_20/mreps_results`.
@@ -160,7 +160,7 @@ To install mreps, visit the [official mreps page](https://mreps.univ-mlv.fr/howt
 	base_dir = "../data/simulated_data/dat3"
 	# Replace dat3 with dat_aax2 or dat_aax3 to test on other simulated data
 	```
-2. Use the following command to compile all evaluation results into a summary sheet in the `mTR_test' folder:
+2. Use the following command to compile all evaluation results into a summary sheet in the `mreps_test' folder:
 	```
 	python result_gather_mreps.py
 	```
@@ -184,7 +184,7 @@ To install TideHunter, visit the [official TideHunter repository](https://github
 	dataset=dat3
 	# Replace dat3 with dat_aax2 or dat_aax3 to test on other simulated data
 	tool_dir=
-	# Put the location of your installed mTR here
+	# Put the location of your installed Tidehunter/bin here
 	```
 3. Change `run_evaluate_edit.sh` to select the dataset you'd like to use (options are dat3, dat_aax2, or dat_aax3):
 4. Run the following command to process all data files in the selected dataset. The evaluation will be run as well. The results will be saved in the folders `data/simulated_data/{dataset name}/error_10/TH_results` and `data/simulated_data/{dataset name}/error_20/TH_results`.
